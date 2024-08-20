@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan - Kedai Tudung</title>
+</head>
+<body style="text-align: center; font-family: Arial, sans-serif;">
+
+    <!-- Header Section -->
+    <header style="background-color: #f8f9fa; padding: 20px; border: 1px solid #ddd; margin: 20px auto; width: 80%; border-radius: 5px;">
+        <h1 style="margin: 0;">Kedai Tudung</h1>
+        <nav style="margin-top: 20px;">
+            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
+                <li style="margin: 0 15px;"><a href="index.html" style="text-decoration: none; color: #007bff;">Utama</a></li>
+                <li style="margin: 0 15px;"><a href="produk.html" style="text-decoration: none; color: #007bff;">Produk</a></li>
+                <li style="margin: 0 15px;"><a href="pesanan.html" style="text-decoration: none; color: #007bff;">Pesanan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="width: 80%; margin: 20px auto; text-align: left;">
+        <section class="features" style="background-color: #f8f9fa; padding: 20px; border: 1px solid #ddd; border-radius: 5px;">
+            <h2>Place Your Order</h2>
+            <form action="/submit-order" method="post" enctype="multipart/form-data">
+
+                <img src="https://assets.nst.com.my/images/articles/hijab1_1563328817.jpg" alt="Tudung Bawal" style="width: 200px; height: auto; margin-right: 20px; border: 1px solid #ddd; border-radius: 5px;" required><br><br>
+
+                <label for="material">Material:</label><br>
+                <input type="text" id="material" name="material" required><br><br>
+
+                <label for="numberOfProducts">Number of Products:</label><br>
+                <input type="number" id="numberOfProducts" name="numberOfProducts" min="1" required><br><br>
+
+                <label for="price">Product’s Price:</label><br>
+                <input type="number" id="price" name="price" step="0.01" required><br><br>
+
+                <input type="submit" value="Place Order">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #f8f9fa; padding: 20px; border: 1px solid #ddd; margin: 20px auto; width: 80%; text-align: left; border-radius: 5px;">
+        <h3>ABOUT US:</h3>
+        <p>No.8, Politeknik Tuanku Syed Sirajuddin, 02600, Pauh Putra, Perlis.</p>
+        <p>&copy; Contact US: 017-474-9443</p>
+    </footer>
+
+</body>
+</html>
